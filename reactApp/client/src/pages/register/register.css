@@ -1,0 +1,167 @@
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;  /* Soft light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;  /* Dark gray text for readability */
+}
+
+/* Register Box */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling issues if necessary */
+}
+.register-box {
+  background: #fff;  /* Clean white background for the form */
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  animation: fadeIn 0.8s ease-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #444;  /* Subtle dark gray for headings */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;  /* Light gray border */
+  border-radius: 8px;
+  background-color: #f9f9f9;  /* Soft beige background for inputs */
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #bfa8a1;  /* Subtle focus color */
+  box-shadow: 0 0 8px rgba(191, 168, 161, 0.3);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #bfa8a1;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.upload-label:hover {
+  color: #7c5c53;  /* Slight darker hover effect */
+}
+
+.image-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #bfa8a1;  /* Subtle beige button color */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #7c5c53;  /* Darker beige hover effect */
+  transform: translateY(-2px);
+}
+
+.login-link {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #bfa8a1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #7c5c53;  /* Darker beige on hover */
+  text-decoration: underline;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .register-box {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}

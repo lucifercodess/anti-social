@@ -1,0 +1,92 @@
+/* RightBar Container */
+.rightbar {
+  flex: 3;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* RightBar Wrapper */
+.rightbarWrapper {
+  padding: 10px;
+}
+
+/* Birthday Notification */
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.birthdayImage {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Advertisement */
+.rightbarAdvertisement {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Online Friends Title */
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Online Friends List */
+.rightbarFriendList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Friend Item */
+.rightbarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Friend Image Container */
+.rightbarImageContainerProfile {
+  position: relative;
+  margin-right: 10px;
+}
+
+/* Profile Image */
+.rightbarProfileimage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Online Status Indicator */
+.rightbarOnline {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  border: 2px solid white;
+}
+
+/* Friend Username */
+.rightbarUsername {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}

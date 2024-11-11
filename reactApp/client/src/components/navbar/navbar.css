@@ -1,0 +1,148 @@
+/* navbar.css */
+
+
+/* Main Navbar Container */
+.navbarContainer {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff; /* Clean, bright background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+/* Left Section */
+.navbarLeft .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6785a8; /* Brighter blue for visual appeal */
+  cursor: pointer;
+}
+
+/* Center Section (Search Bar) */
+.navbarCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5; /* Light gray background for contrast */
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.searchbar:hover {
+  background-color: #e0e2e8; /* Darken slightly on hover */
+}
+
+.searchIcon {
+  color: #232426; /* Matches logo */
+  font-size: 20px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 100%;
+  color: #333;
+}
+
+/* Right Section */
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Links */
+.navbarLinks {
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbarLink {
+  margin-right: 15px;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.navbarLink:hover {
+  color: #0078FF; /* Highlight on hover */
+}
+
+/* Navbar Icons with Badges */
+.navbarIcons {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.navbarIconItem {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbarIconItem svg {
+  font-size: 24px;
+  color: #0078FF; /* Icon color */
+  transition: transform 0.2s ease;
+}
+
+.navbarIconItem:hover svg {
+  transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+.navbarIconBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #FF5A5F; /* Bright red for visibility */
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.navbarImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #0078FF;
+  transition: transform 0.2s ease;
+}
+
+.navbarImage:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.profile-dropdown img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
